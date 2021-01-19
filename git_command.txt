@@ -1,0 +1,7 @@
+1) Navigate to the folder that contains all the files
+
+2) Command: D:\4907\Capstone\>git add .
+
+3) Command: D:\4907\Capstone\>git commit -m "Commit Message"
+
+4) Command: D:\4907\Capstone\>git push -u origin master

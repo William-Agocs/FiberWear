@@ -1,0 +1,26 @@
+[
+    {
+        'userIndex': 1,
+        'userFirstName': 'First',
+        'userLastName': 'Last',
+        'userProfilePictureFilePath': 'path/to/pic',
+        'totalGivenSum': 254,
+        'totalReceivedSum': 345
+    },
+    {
+        'userIndex': 2,
+        'userFirstName': 'First',
+        'userLastName': 'Last',
+        'userProfilePictureFilePath': 'path/to/pic',
+        'totalGivenSum': 254,
+        'totalReceivedSum': 345
+    },
+    {
+        'userIndex': 3,
+        'userFirstName': 'First',
+        'userLastName': 'Last',
+        'userProfilePictureFilePath': 'path/to/pic',
+        'totalGivenSum': 254,
+        'totalReceivedSum': 345
+    }
+]
