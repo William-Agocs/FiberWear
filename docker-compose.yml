@@ -34,6 +34,24 @@ services:
         networks:
             - app-network
 
+    python1:
+        container_name: python1
+        build: ./python1/.
+        ports:
+            - "8079:8079"
+        expose:
+            - "8079"
+        volumes:
+            - ./python1/:/usr/src/app
+        depends_on:
+            - mysql1
+            - api
+        links:
+            - mysql1
+            - api
+        networks:
+            - app-network
+
 networks:
     app-network:
         driver: bridge

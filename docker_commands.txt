@@ -1,0 +1,17 @@
+1) Navigate to the folder that contains all the files
+
+2) Command: D:\4907\Capstone\>docker-compose up --build
+
+
+
+
+
+
+
+
+NOTE:
+
+a) To see what docker containers are running, do the following command: D:\4907\Capstone\>docker container ls
+
+b) To restart a container after you have made changes, do the following command: D:\4907\Capstone\>docker container restart <container_id>
+    (do the command "docker container ls" to get the container ids)
