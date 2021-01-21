@@ -51,7 +51,7 @@ var pool = mysql.createPool({
 
 router.get("/v1/", (req, res) => {
     console.log("Responding to root");
-    res.send("Hello from main route");
+    res.send("Hello from main routee");
 });
 
 //-------------------------------- DATA ------------------------------------------
