@@ -6,5 +6,5 @@ WORKDIR /usr/src/app
 RUN pip3 install requests
 RUN pip3 install smtp
 
-# CMD ["python", "Main.py"]
-CMD ["tail", "-F", "/dev/null"]
+CMD ["python", "Main.py"]
+# CMD ["tail", "-F", "/dev/null"]

@@ -94,6 +94,32 @@ CREATE TABLE `challenge_user_data` (
   `finish_time` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`user_index`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+
+DROP TABLE IF EXISTS `measurements`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `measurements` (
+  `measurement_num` int(11) NOT NULL AUTO_INCREMENT,
+  `measurement` varchar(500) NOT NULL,
+  `start_time` datetime NOT NULL,
+  `finish_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`measurement_num`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+
+DROP TABLE IF EXISTS `job_manager`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `job_manager` (
+  `job_id` int(11) NOT NULL AUTO_INCREMENT,
+  `job_status` enum('Requested','In progress','Completed','Failed') NOT NULL DEFAULT 'Requested',
+  `measurement_entry_id` int(11) NULL DEFAULT NULL,
+  `job_requested_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `job_completion_time` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`job_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

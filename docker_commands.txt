@@ -15,3 +15,6 @@ a) To see what docker containers are running, do the following command: D:\4907\
 
 b) To restart a container after you have made changes, do the following command: D:\4907\Capstone\>docker container restart <container_id>
     (do the command "docker container ls" to get the container ids)
+
+c) Delete all data within the previous database: $docker volume prune
+c) Delete all system data of previous state: $docker system prune
