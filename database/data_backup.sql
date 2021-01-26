@@ -104,6 +104,7 @@ CREATE TABLE `measurements` (
   `measurement` varchar(500) NOT NULL,
   `start_time` datetime NOT NULL,
   `finish_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `graph_picture_location` varchar(255) NULL DEFAULT NULL,
   PRIMARY KEY (`measurement_num`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
